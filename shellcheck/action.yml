@@ -1,0 +1,6 @@
+name: 'Shell Check'
+description: 'Lint shell scripts using shellcheck'
+
+runs:
+    using: docker
+    image: 'Dockerfile'
