@@ -1,0 +1,18 @@
+---
+name: yamllint
+description: 'Lint YAML files using yamllint'
+
+inputs:
+    config_file:
+        description: The path to a custom yamllint config file
+        required: false
+    strict:
+        description: If set, return non-zero for warnings and errors
+        required: false
+    source:
+        description: Files or directories to lint
+        required: true
+
+runs:
+    using: docker
+    image: 'Dockerfile'
