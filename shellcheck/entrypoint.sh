@@ -2,4 +2,4 @@
 
 setopt extended_glob
 
-shellcheck **/*.sh~calibre-py*
+shellcheck --severity=error **/*.sh~calibre-py*
